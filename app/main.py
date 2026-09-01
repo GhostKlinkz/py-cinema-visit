@@ -1,10 +1,16 @@
+```python
 from app.cinema.bar import CinemaBar
 from app.cinema.hall import CinemaHall
 from app.people.customer import Customer
 from app.people.cinema_staff import Cleaner
 
 
-def cinema_visit(movie, customers, hall_number, cleaner):
+def cinema_visit(
+    movie: str,
+    customers: list,
+    hall_number: int,
+    cleaner: str
+) -> None:
     customer_objects = []
 
     for customer in customers:
@@ -27,3 +33,4 @@ def cinema_visit(movie, customers, hall_number, cleaner):
         customers=customer_objects,
         cleaning_staff=cleaning_staff
     )
+```
