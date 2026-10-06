@@ -1,4 +1,3 @@
-```python
 from app.cinema.bar import CinemaBar
 from app.cinema.hall import CinemaHall
 from app.people.customer import Customer
@@ -33,4 +32,3 @@ def cinema_visit(
         customers=customer_objects,
         cleaning_staff=cleaning_staff
     )
-```
